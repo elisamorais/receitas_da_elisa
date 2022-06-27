@@ -1,0 +1,23 @@
+{
+  "name": "receitas_da_elisa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/elisamorais/receitas_da_elisa.git",
+  "author": "Elisa Morais <elisa.morais74@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only src/server.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.7.4"
+  }
+}
