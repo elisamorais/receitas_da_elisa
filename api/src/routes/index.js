@@ -12,5 +12,13 @@ router.get('/api', (req, res) => {
     });
 });
 
+router.post('/api/categoria/', (req,res) =>{
+    res.status(201).send({
+        sucess: 'true',
+        menssage: 'Categoria criada com sucesso.',
+        version: '1.0.0',
+    });
+});
+
 module.exports = router;
 
