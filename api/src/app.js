@@ -7,7 +7,7 @@ const app = express();
 
 const index = require('./routes/index');
 const receitaRoute = require('./routes/receitas.routes');
-//const categoriaRoute = require('./routes/categoria.routes');
+const categoriaRoute = require('./routes/categoria.routes');
 
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
@@ -16,8 +16,8 @@ app.use(cors());
 
 app.use(index);
 app.use('/api/', receitaRoute);
-//app.use(index)
-//app.use('/api', categoriaRoute);
+app.use(index)
+app.use('/api', categoriaRoute);
 
 
 module.exports = app;

@@ -15,3 +15,8 @@ exports.createReceita = async (req, res) => {
         }
     });
 };
+
+exports.listAllReceiras =  async (req, res) => {
+    const response = await db.query('SELECT * from receitas ORDER BY nome ASC');
+    res.status(200).send(response.rows);
+};

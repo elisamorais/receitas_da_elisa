@@ -15,10 +15,12 @@ router.get('/api', (req, res) => {
 router.post('/api/categoria/', (req,res) =>{
     res.status(201).send({
         sucess: 'true',
-        menssage: 'Categoria criada com sucesso.',
+        menssage: 'Categoria criada com sucesso123.',
         version: '1.0.0',
     });
 });
-
+//esse é o arquivo que chama no postman. 
+//tentar unificar o outro arquivo ou excluir ele aqui no index. 
+//entender como funciona o arquivo individual das rotas pra poder excluir um 
 module.exports = router;
 

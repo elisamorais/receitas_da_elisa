@@ -7,9 +7,9 @@ exports.createCategoria = async (req, res) => {
     const { rows } = await db.query("INSERT INTO categoria (nome) VALUE ($1)", [nome]);
     
     res.status(201).send({
-        message: "Categoria added successfully!",
+        message: "Categoria added successfully123!",
         body: {
             categoria: { nome }
-        }
+        },
     });
 };
